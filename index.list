@@ -3,3 +3,6 @@ README.md            #画像処理の基礎のキソ:GIMPとProce
 install.md           #GIMPとProcessingのインストー
 gimp-abc.md          #GIMPの基本
 color.md             #色について
+filter.md            #基本的なフィルター処理
+alpha.md             #アルファブレンディング
+selection.md         #高度な範囲選択

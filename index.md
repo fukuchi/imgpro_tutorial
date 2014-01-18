@@ -4,3 +4,6 @@
 1. [GIMPとProcessingのインストール](install.md)
 1. [GIMPの基本](gimp-abc.md)
 1. [色について](color.md)
+1. [基本的なフィルター処理](filter.md)
+1. [アルファブレンディング](alpha.md)
+1. [高度な範囲選択](selection.md)
