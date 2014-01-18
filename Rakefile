@@ -51,10 +51,12 @@ class DocRenderer < Redcarpet::Render::XHTML
 		inum = $index.index(@source)
 		abort "#{@source} is not listed in the index file." if inum.nil?
 		if inum > 0
-			str << "<p><a href=\"#{$index[inum - 1].gsub(/md$/,'html')}\">前章</a></p>"
+			prevtitle = open($index[inum - 1]).readline.chomp
+			str << "<p>前章: <a href=\"#{$index[inum - 1].gsub(/md$/,'html')}\">#{prevtitle}</a></p>"
 		end
 		if inum < $index.length - 1
-			str << "<p><a href=\"#{$index[inum + 1].gsub(/md$/,'html')}\">次章</a></p>"
+			nexttitle = open($index[inum + 1]).readline.chomp
+			str << "<p>次章: <a href=\"#{$index[inum + 1].gsub(/md$/,'html')}\">#{nexttitle}</a></p>"
 		end
 		str << "<p><a href=\"index.html\">目次</a></p>"
 		str << "</body></html>\n"
