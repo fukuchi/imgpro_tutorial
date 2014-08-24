@@ -17,3 +17,5 @@ Processing はプログラムを組んで実行させるためのソフトウェ
 - [Processing オフィシャルサイト](http://www.processing.org/)
 
 ### Processing のインストール
+
+[GIMP のダウンロードページ](http://www.gimp.org/downloads/) に、Windows 版や Mac OS X 版のダウンロード用リンクがあるので、そちらからダウンロードし、インストールしてください。ページ中に "show other downloads" というリンクがあるので、そこをクリックしないと Windows 版などへのリンクが表示されないかもしれませんので注意してください。
